@@ -1,4 +1,9 @@
 title: The chalk board
+description: >- # ignore newlines until "theme:"
+This site contains helpful tips and trips and other things I've learned
+over the years. This is specifically useful for Open Liberty, WebSphere
+Liberty, WebSphere Application Server (WAS) and IBM MQ.
+theme: minima
 defaults:
 plugins:
   - jekyll-relative-links
