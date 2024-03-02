@@ -26,7 +26,7 @@ This issue felt related to Java 17, and more specifically to our SSL settings (e
 
 The SSL config we historically used with Java 8 was similar to:
 
-````
+````xml
 <ssl id="defaultSSLConfig"
     sslProtocol="TLSv1.2"
     keyStoreRef="defaultKeyStore"
@@ -38,7 +38,7 @@ When the enabledCiphers keyword was removed, the adminCenter worked fine. When i
 
 To help see what was happening internally, the following trace point was enabled.
 
-````
+````xml
 <logging traceSpecification="SSLChannel=all:com.ibm.ws.ssl.*=all:com.ibm.websphere.ssl=all:com.ibm.wsspi.ssl.*=all" isoDateFormat="true" />
 ````
 
@@ -62,7 +62,7 @@ adjustSupportedCiphersToSecurityLevel Entry
 
 The solution was simply a matter of renaming the CipherSuite to use the TLS_ prefix. In the below example I took the chance to enabled TLS 1.3 for my testing and it worked fine.
 
-````
+````xml
 <ssl id="defaultSSLConfig"
     sslProtocol="TLSv1.2,TLSv1.3"
     keyStoreRef="defaultKeyStore"
@@ -70,7 +70,7 @@ The solution was simply a matter of renaming the CipherSuite to use the TLS_ pre
 />
 ````
 
-DISCLAIMER
+**DISCLAIMER**
 
 The enabledCiphers values were selected for testing purposes only. No recommendation for suitable and secure CipherSuites is inferred in the above example. You always need to consult your security experts and follow their guidance.
 
