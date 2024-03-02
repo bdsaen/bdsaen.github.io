@@ -1,7 +1,3 @@
----
-title:  "Welcome"
----
-
 # Overview
 
 This site is essentially my "info center" where I have documented things I have found or problems I have encountered in my day-to-day job.
