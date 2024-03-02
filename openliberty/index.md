@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Open Liberty"
-author: Sean Boyd
 ---
 
 This page comtains a list of problems encountered with an appropriate solution.
