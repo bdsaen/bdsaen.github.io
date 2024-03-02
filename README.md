@@ -1,5 +1,3 @@
-# Overview
-
 This site is essentially my "info center" where I have documented things I have found or problems I have encountered in my day-to-day job.
 
 It is a consolidation of my scattered files across multiple laptops and directories. I'm sure you know what I mean. It also contains the end result of many hours searching multiple threads on the internet, some useful and some not, and some frustratinly with no conclusion.
