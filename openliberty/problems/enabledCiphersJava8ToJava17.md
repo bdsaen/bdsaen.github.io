@@ -1,4 +1,4 @@
-# enabledCiphers change from Java 8 to Java 17
+# enabledCiphers change from SSL_ in Java 8 to to TLS_ in Java 17
 
 2 March 2024, Sean Boyd
 
