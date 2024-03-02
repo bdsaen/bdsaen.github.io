@@ -4,8 +4,6 @@ title:  "Open Liberty"
 author: Sean Boyd
 ---
 
-# Open Liberty
-
 This page comtains a list of problems encountered with an appropriate solution.
 
 ## Problems
