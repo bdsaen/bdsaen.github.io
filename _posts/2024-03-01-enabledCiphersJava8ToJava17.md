@@ -9,7 +9,7 @@ author: Sean Boyd
 | Category | Details  |
 | :--- | :--- |
 | Product  | WebSphere Liberty 24.0.0.1 |
-| Java  | Java 17, specifically IBM Semeru Java 17 |
+| Java  | IBM Semeru Java 17 |
 | Component | enabledCiphers |
 
 ## Problem summary
