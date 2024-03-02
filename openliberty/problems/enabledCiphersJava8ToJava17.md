@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
 # enabledCiphers change from SSL_ in Java 8 to to TLS_ in Java 17
 
 2 March 2024, Sean Boyd
