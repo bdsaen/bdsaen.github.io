@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "enabledCiphers change from Java 8 to Java 17"
+title:  "enabledCiphers uses TLS_ in Java 17"
 ---
 
 Sean Boyd
