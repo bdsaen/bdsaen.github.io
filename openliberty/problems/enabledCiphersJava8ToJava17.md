@@ -4,11 +4,11 @@
 
 ## Environment
 
-|  |  |
+| Category | Details  |
 | :--- | :--- |
 | Product  | WebSphere Liberty 24.0.0.1 |
 | Java  | Java 17 |
-| Componenent | enabledCiphers |
+| Component | enabledCiphers |
 
 ## Problem summary
 
