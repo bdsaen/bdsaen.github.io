@@ -1,6 +1,10 @@
-This site is essentially my "info center" where I have documented things I have found or problems I have encountered in my day-to-day job.
+Welcome to my **Info Center** as I like to call it.
 
-It is a consolidation of my scattered files across multiple laptops and directories. I'm sure you know what I mean. It also contains the end result of many hours searching multiple threads on the internet, some useful and some not, and some frustratinly with no conclusion.
+You could think of this as another blog site and maybe it is. I'd like to think of it as more than another blog site, but a location that contains not only blogs but other little tidbits of information that doesn't warrant the formality of a blog.
+
+Over time this should contain the consolidation of cheatsheets and other documents I've created or collected over many years, recent problems I've encountered or things I've found, and anything else I've found that's useful.
+
+Hopefully it can address some of the most frustrating parts of searching for solutions where many pose questions but end in silence, no solution to be found.
 
 # Focus
 
