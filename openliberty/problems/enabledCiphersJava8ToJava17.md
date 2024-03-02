@@ -70,7 +70,7 @@ The solution was simply a matter of renaming the CipherSuite to use the TLS_ pre
 
 **DISCLAIMER**
 
-The enabledCiphers values were selected for testing purposes only. No recommendation on suitable and secure CipherSuites is inferred in the above example. You always need to consult your security experts and follow their guidance.
+The enabledCiphers values were selected for testing purposes only. No recommendation for suitable and secure CipherSuites is inferred in the above example. You always need to consult your security experts and follow their guidance.
 
 ## Conclusion
 
