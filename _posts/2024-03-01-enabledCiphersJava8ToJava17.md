@@ -26,21 +26,21 @@ This issue felt related to Java 17, and more specifically to our SSL settings (e
 
 The SSL config we historically used with Java 8 was similar to:
 
-````xml
+```xml
 <ssl id="defaultSSLConfig"
     sslProtocol="TLSv1.2"
     keyStoreRef="defaultKeyStore"
     enabledCiphers="SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
 />
-````
+```
 
 When the enabledCiphers keyword was removed, the adminCenter worked fine. When it was added back, the adminCennter stopped working. Rolling back from Java 17 to java 8 had the same effect - the adminCenter worked fine.
 
 To help see what was happening internally, the following trace point was enabled.
 
-````xml
+```xml
 <logging traceSpecification="SSLChannel=all:com.ibm.ws.ssl.*=all:com.ibm.websphere.ssl=all:com.ibm.wsspi.ssl.*=all" isoDateFormat="true" />
-````
+```
 
 Upon replicating the issue the following error was found in the trace.log file. Removing each CipherSuite one-by-one resulted in a similar error being returned, until the keyword enabledCiphers was removed as it no longer contained any values.
 
@@ -62,13 +62,13 @@ adjustSupportedCiphersToSecurityLevel Entry
 
 The solution was simply a matter of renaming the CipherSuite to use the TLS_ prefix. In the below example I took the chance to enabled TLS 1.3 for my testing and it worked fine.
 
-````xml
+```xml
 <ssl id="defaultSSLConfig"
     sslProtocol="TLSv1.2,TLSv1.3"
     keyStoreRef="defaultKeyStore"
     enabledCiphers="TLS_AES_256_GCM_SHA384 TLS_AES_128_GCM_SHA256 TLS_CHACHA20_POLY1305_SHA256 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
 />
-````
+```
 
 **DISCLAIMER**
 
