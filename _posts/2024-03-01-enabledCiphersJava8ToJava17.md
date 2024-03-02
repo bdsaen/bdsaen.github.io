@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "enabledCiphers uses TLS_ in Java 17"
+author: Sean Boyd
 ---
-
-Sean Boyd
 
 ## Environment
 
