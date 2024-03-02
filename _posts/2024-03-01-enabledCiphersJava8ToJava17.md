@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "enabledCiphers uses TLS_ in Java 17"
+title:  "Open Liberty enabledCiphers uses TLS_ in Java 17"
 author: Sean Boyd
 ---
 
