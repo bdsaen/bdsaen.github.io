@@ -10,7 +10,7 @@ Hopefully it can address some of the most frustrating parts of searching for sol
 
 The focus of this site will grow over time, but for now contains details surrounding IBM WebSphere Applicaiton Server, Open Liberty (or WebSphere Liberty) and IBM MQ.
 
-Some topics may be indirectly related to these products, such as creating key stores and SSL certificates using openssl, ikeyman or keytool
+Some topics may be indirectly related to these products, such as creating key stores and SSL certificates using openssl, ikeyman or keytool.
 
 # Products
 
