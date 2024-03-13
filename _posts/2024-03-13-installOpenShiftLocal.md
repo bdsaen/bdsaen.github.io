@@ -12,15 +12,15 @@ I've installed and reinstalled OpenShift Local multiple times for testing on bot
 
 Primary Red Hat landing page:
 
-https://developers.redhat.com/products/openshift-local/overview
+[OpenShift overview](https://developers.redhat.com/products/openshift-local/overview)
 
 Download page for OpenShift Local. This includes the pull secret and a link to the setup guide:
 
-https://console.redhat.com/openshift/create/local
+[Download OpenShift Local](https://console.redhat.com/openshift/create/local)
 
 Setup guide. This is what I followed. This blog has extracted the bare-bones from this guide to install and configure OpenShift Local.
 
-https://access.redhat.com/documentation/en-us/red_hat_openshift_local
+[OpenShift Local installation guide](https://access.redhat.com/documentation/en-us/red_hat_openshift_local)
 
 ## Minumum requirements
 
