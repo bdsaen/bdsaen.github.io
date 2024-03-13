@@ -219,4 +219,4 @@ Use the 'oc' command line interface:
 
 As part of my learning I followed the below OpenLiberty guide. This put my OpenShift Local installation though its paces and is the primary reason I increased the default sizes. With the defaults I ran into problems with ephemeral memory and Disk Pressure.
 
-https://openliberty.io/guides/cloud-openshift-operator.html#building-and-pushing-the-images
+[OpenLiberty guide - Cloud OpenShift operator](https://openliberty.io/guides/cloud-openshift-operator.html#building-and-pushing-the-images)
