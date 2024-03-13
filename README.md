@@ -15,4 +15,5 @@ Some topics may be indirectly related to these products, such as creating key st
 # Products
 
 [Open Liberty](openliberty/index.md)
+
 [OpenShift](openshift/index.md)
