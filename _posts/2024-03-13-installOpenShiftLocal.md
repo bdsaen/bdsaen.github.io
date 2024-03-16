@@ -22,9 +22,9 @@ Setup guide. This is what I followed. This blog has extracted the bare-bones fro
 
 [OpenShift Local installation guide](https://access.redhat.com/documentation/en-us/red_hat_openshift_local)
 
-## Minumum requirements
+## Minimum requirements
 
-According to the OpenShift Local guide the following minimum reqirements must be met:
+According to the OpenShift Local guide the following minimum requirements must be met:
 
 - 4 physical CPU cores
 - 9 GB of free memory
@@ -35,7 +35,7 @@ According to the OpenShift Local guide the following minimum reqirements must be
 | Category | Details  |
 | :--- | :--- |
 | Desktop PC  | HP Omen, 12th Gen Intel Core i7-12700K, 3600 MHz, 12 cores, 20 logical processors |
-| Second disk  | NVMe WD WD_BLACK Gen4 1TB disk |
+| Primary disk  | NVMe WD WD_BLACK Gen4 1TB disk |
 
 The sizings I specified for the configuration is higher than the defaults for multiple reasons:
 
@@ -61,7 +61,7 @@ Take note of the following comment from the OpenShift Local installation guide:
 
 ## Usage data collection
 
-I chose to disable usage data colletion
+I chose to disable usage data collection
 
 ```cmd
 crc config set consent-telemetry no
@@ -73,7 +73,7 @@ From my general usage it is not necessary to change the defaults. I have been us
 
 Recently, however, I started to face issues with ephemeral storage and DiskPressure. So I decided to increase selected defaults.
 
-These defaults should be set before isuing the "crc setup".
+These defaults should be set before issuing the "crc setup".
 
 Update the number of CPUS from 4 (default) to 6. I'm not sure whether this is really needed but I decided to change anyway.
 
@@ -81,13 +81,13 @@ Update the number of CPUS from 4 (default) to 6. I'm not sure whether this is re
 crc config set cpus 6
 ```
 
-Update the memory from 9 GB (default) to 25 GB. As I plan on enabling the monitoring that requires a minumum of 14 GB I chose a much higher value. To check the usage you can issue "crc status" - after installation I can see this going much higher than the default due to the components I am installing.
+Update the memory from 9 GB (default) to 25 GB. As I plan on enabling the monitoring that requires a minimum of 14 GB I chose a much higher value. To check the usage you can issue "crc status" - after installation I can see this going much higher than the default due to the components I am installing.
 
 ```cmd
 crc config set memory 25600
 ```
 
-I also used this as a chance to increase the disk size from 31 GB (default) to a much higher value. I chose 100 GB for no reason other than its a much larger number.
+I also used this as a chance to increase the disk size from 31 GB (default) to a much higher value. I chose 100 GB for no reason other than it's a much larger number.
 
 ```cmd
 crc config set disk-size 100
@@ -107,7 +107,7 @@ To complete the setup issue the command.
 crc setup
 ```
 
-Once the setup is commplete, start OpenShift Local.
+Once the setup is complete, start OpenShift Local.
 
 ```cmd
 crc start
@@ -217,6 +217,6 @@ Use the 'oc' command line interface:
 
 ## Final comment
 
-As part of my learning I followed the below OpenLiberty guide. This put my OpenShift Local installation though its paces and is the primary reason I increased the default sizes. With the defaults I ran into problems with ephemeral memory and Disk Pressure.
+As part of my learning, I followed the below OpenLiberty guide. This put my OpenShift Local installation through its paces and is the primary reason I increased the default sizes. With the defaults I ran into problems with ephemeral memory and Disk Pressure.
 
 [OpenLiberty Guide Cloud OpenShift Operator](https://openliberty.io/guides/cloud-openshift-operator.html)
